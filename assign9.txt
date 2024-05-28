@@ -1,0 +1,26 @@
+1>  Is the InnerFunction() a closure?
+
+Yes, InnerFunction is a closure. A closure is a function that retains access to its lexical scope, even when the function is executed outside that scope. In this case, InnerFunction retains access to outerVariable defined in OuterFunction.
+
+2>  What is the output of this program?
+
+The output of the program is an alert displaying 100. When innerFunc (which is InnerFunction) is called, it has access to outerVariable through closure, and thus it alerts the value 100.
+
+3> Difference between a closure and a scope:
+
+Scope: Scope refers to the visibility or accessibility of variables and functions in different parts of the code. There are two types of scope:
+Global Scope: Variables defined outside of any function, accessible from anywhere in the code.
+Local Scope: Variables defined within a function, accessible only within that function.
+
+Closure:   A closure is a function that retains access to its outer (lexical) scope, even after the outer function has finished executing. Closures are created every time a function is defined inside another function and the inner
+function retains access to the variables of the outer function.
+
+
+4> Lexical scope and its relation to closure:
+
+Lexical Scope:  Lexical scope, also known as static scope, refers to the fact that the scope of a variable is determined by its position in the source code. In JavaScript, functions are executed using the scope in which they were defined, not the scope in which they are invoked.
+
+Relation to Closure:  Closures are functions that preserve their lexical scope, allowing them to access variables from their containing (outer) function even after the outer function has finished executing. This happens because the inner function "closes over" the variables from its lexical scope.
+
+
+5>   Output of the following closure:   3  3  3
